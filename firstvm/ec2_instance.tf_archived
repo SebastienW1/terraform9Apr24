@@ -1,0 +1,14 @@
+resource "aws_instance" "web_server-Sebastien" {
+
+  ami = var.ami_image_name
+
+  instance_type = var.instance_type
+
+  tags = {
+    "Name" = "myWebServer-Sebastien"
+  }
+
+
+
+}
+
